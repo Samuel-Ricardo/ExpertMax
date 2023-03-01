@@ -11,9 +11,16 @@ import Service from './service.js'
 */
 
 const { tf, faceLandmarksDetection } = self;
-tf.setBackeng('webgl')
+tf.setBackend('webgl')
 
 const service = new Service({ faceLandmarksDetection })
+
+console.log("Loading TF Module...");
+await service.loadModel()
+console.log("TF Module Loaded");
+
+postMessage('READY')
+
 
 onmessage = ({ data }) => {
     console.log("Worker!", data)
