@@ -15,9 +15,9 @@ tf.setBackend('webgl')
 
 const service = new Service({ faceLandmarksDetection })
 
-console.log("Loading TF Module...");
+console.log("Loading TF Model...");
 await service.loadModel()
-console.log("TF Module Loaded");
+console.log("TF Model Loaded");
 
 postMessage('READY')
 
