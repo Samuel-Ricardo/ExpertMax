@@ -1,1 +1,4 @@
-export const Worker = {}
+onmessage = ({ data }) => {
+    console.log("Worker!", data)
+    postMessage({'ok':'ok'})
+}
