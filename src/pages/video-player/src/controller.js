@@ -5,6 +5,8 @@ export default class Controller {
     constructor({view, service}) {
         this.#view = view
         this.#service = service
+        
+        this.#view.configureOnBtnClick(this.onBtnStart.bind(this))
     }
 
     static async initialize(deps) {
@@ -17,5 +19,7 @@ export default class Controller {
 
     log(text) { this.#view.log(`Logger: ${text}`) }
 
-    
+    onBtnStart() {
+        this.log("initiaalizing detection...")
+    }
 }
