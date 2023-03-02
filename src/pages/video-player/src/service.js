@@ -13,4 +13,14 @@ export default class Service {
             { masxFaces: 1 }
         )
     }
+
+
+    #estimateFaces(video) {
+        return this.#model.estimateFaces({
+            input: video,
+            returnTensors: false,
+            flipHorizontal: true,
+            predictIrises: true,
+        })
+    }
 }
