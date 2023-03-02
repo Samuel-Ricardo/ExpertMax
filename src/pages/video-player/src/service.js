@@ -40,25 +40,25 @@ export default class Service {
 
     async handBlinked(video) {
         const predictions = await this.#estimateFaces(video)
-       if (!predictions.length) return false
+        
+        if (!predictions.length) return false
 
         for (const prediction of predictions) {
+            // Right eye parameters
+            const lowerRight = prediction.annotations.rightEyeUpper0
+            const upperRight = prediction.annotations.rightEyeLower0
+            const rightEAR = this.#getEAR(upperRight, lowerRight)
+            // Left eye parameters
+            const lowerLeft = prediction.annotations.leftEyeUpper0
+            const upperLeft = prediction.annotations.leftEyeLower0
+            const leftEAR = this.#getEAR(upperLeft, lowerLeft)
 
-        // Right eye parameters
-        const lowerRight = prediction.annotations.rightEyeUpper0
-        const upperRight = prediction.annotations.rightEyeLower0
-        const rightEAR = this.#getEAR(upperRight, lowerRight)
-        // Left eye parameters
-        const lowerLeft = prediction.annotations.leftEyeUpper0
-        const upperLeft = prediction.annotations.leftEyeLower0
-        const leftEAR = this.#getEAR(upperLeft, lowerLeft)
+            // True if the eye is closed
+            const blinked = leftEAR <= EAR_THRESHOLD && rightEAR <= EAR_THRESHOLD
+            if (!blinked) continue
+            //if(!shouldRun()) continue
 
-        // True if the eye is closed
-        const blinked = leftEAR <= EAR_THRESHOLD && rightEAR <= EAR_THRESHOLD
-        if (!blinked) continue
-        if(!shouldRun()) continue
-
-        return blinked
+            return blinked
         }
         return false
     }
