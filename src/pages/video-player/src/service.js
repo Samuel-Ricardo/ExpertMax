@@ -1,4 +1,4 @@
-import { prepareRunChecker } from "../../../libs/shared/utils";
+import { prepareRunChecker } from "../../../libs/shared/utils.js";
 
 const {shouldRun} = prepareRunChecker({tmierDelay: 500});
 const EAR_THRESHOLD = 0.27;
