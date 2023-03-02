@@ -50,10 +50,13 @@ export default class Controller {
         this.#worker.send(img)
         this.log(`Detecting eye blink...`)
 
-        setTimeout(() => this.loop, 100);
+        setTimeout(() => this.loop(), 100);
     }
 
-    log(text) { this.#view.log(`Logger: ${text}`) }
+    log(text) { 
+        const times = `     - Blinked Times: ${this.#blinkCounter}`
+        this.#view.log(`Status: ${text}`.concat(this.#blinkCounter ? times : ''))
+     }
 
     onBtnStart() {
         this.log("initiaalizing detection...")
