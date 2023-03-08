@@ -6,4 +6,8 @@ export default class HandGestureController {
     this.#service = service;
   }
     
+  static async initialize(deps){
+    const controller = new HandGestureController(deps);
+    return controller.init()
+  }
 }
