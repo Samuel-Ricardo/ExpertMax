@@ -34,7 +34,7 @@ export default class HandGestureService {
 
       const {x,y} = hand.keypoints.find(keypoint => keypoint.name === 'index_finger_tip')
       yield { event: result.name, x, y } //return result and later continue the 'for'
-
+      console.log(gestureStrings[result.name])
     }
   }
 
