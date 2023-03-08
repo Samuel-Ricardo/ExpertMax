@@ -21,7 +21,11 @@ export default class HandGestureController {
 
      catch(error) { console.log("Deu ruim :/", {error}) }
   }
-
+  
+  async #loop () {
+    await this.#service.initializeDetector()
+    await this.#estimateHands()
+  }
 
   static async initialize(deps){
     const controller = new HandGestureController(deps);
