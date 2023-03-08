@@ -8,6 +8,9 @@ import HandGestureController from "../controllers/handGestureController.js"
 import HandGestureService from "../services/handGestureService.js"
 import HandGestureView from "../views/handGestureView.js"
 
+import Camera from '../../../../libs/shared/cam.js' 
+const camera = await Camera.init();
+
 const [rootPath] = window.location.href.split('/pages/')
 const handGestureFactory = {
     async initialize() {
@@ -17,7 +20,8 @@ const handGestureFactory = {
                 fingerpose: window.fp,
                 handPoseDetection: window.handPoseDetection,
                 handsVersion: window.VERSION
-            })
+            }),
+            camera,
         })
     }
 }
