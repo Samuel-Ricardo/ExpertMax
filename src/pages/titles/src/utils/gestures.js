@@ -13,3 +13,6 @@ for(let finger of [Finger.Index, Finger.Middle, Finger.Ring, Finger.Pinky]) {
 }
 
 
+for (let finger of Finger.all) {
+    PaperGesture.addCurl(finger, FingerCurl.NoCurl, 1.0)
+}
