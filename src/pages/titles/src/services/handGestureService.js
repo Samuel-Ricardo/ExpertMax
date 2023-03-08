@@ -1,13 +1,21 @@
+import { knowGestures, gestureStrings } from "../utils/gestures.js"
+
 export default class HandGestureService {
-  #fingerpose
+  #gestureEstimator
   #handPoseDetection
   #handsVersion
   #detector = null
 
   constructor({ fingerpose, handPoseDetection, handsVersion }){
-    this.#fingerpose = fingerpose 
+    this.#gestureEstimator = new fingerpose.GestureEstimator(knowGestures)
     this.#handPoseDetection = handPoseDetection 
     this.#handsVersion = handsVersion
+  }
+
+
+
+  #getLandMarksFromKeypoints(keypoints3D) {
+    return keypoints3D.map(keypoint => [keypoint.x, keypoint.y, keypoint.z])
   }
 
   async estimateHands(video) {
