@@ -16,10 +16,12 @@ export default class HandGestureController {
   async #estimateHands() {
     try{ 
       const hands = await this.#service.estimateHands(this.#camera.video);
-      console.log({hands}) 
-     }
+      for await (const { event, x, y } of this.#service.detectGesture(hands)){
+        console.log({event, x, y});
+      }
+    }
 
-     catch(error) { console.log("Deu ruim :/", {error}) }
+    catch(error) { console.log("Deu ruim :/", {error}) }
   }
   
   async #loop () {
