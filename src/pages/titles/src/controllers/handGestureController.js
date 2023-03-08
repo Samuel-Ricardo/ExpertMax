@@ -25,6 +25,7 @@ export default class HandGestureController {
   async #loop () {
     await this.#service.initializeDetector()
     await this.#estimateHands()
+    this.#view.loop(this.#loop.bind(this))
   }
 
   static async initialize(deps){
