@@ -1,18 +1,27 @@
 const { GestureDescription, Finger, FingerCurl } = window.fp;
 
-const RockGesture = new GestureDescription('rock'); // ✊️
-const PaperGesture = new GestureDescription('paper'); // 🖐
+const ScrollDownGesture = new GestureDescription('scroll-down'); // ✊️
+const ScrollUpGesture = new GestureDescription('scroll-up'); // 🖐
 
 
-RockGesture.addCurl(Finger.Thumb, FingerCurl.HalfCurl, 1.0);
-RockGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 0.5);
+ScrollDownGesture.addCurl(Finger.Thumb, FingerCurl.HalfCurl, 1.0);
+ScrollDownGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 0.5);
 
 for(let finger of [Finger.Index, Finger.Middle, Finger.Ring, Finger.Pinky]) {
-    RockGesture.addCurl(finger, FingerCurl.FullCurl, 1.0);
-    RockGesture.addCurl(finger, FingerCurl.NoCurl, 0.9);
+    ScrollDownGesture.addCurl(finger, FingerCurl.FullCurl, 1.0);
+    ScrollDownGesture.addCurl(finger, FingerCurl.NoCurl, 0.9);
 }
 
 
 for (let finger of Finger.all) {
-    PaperGesture.addCurl(finger, FingerCurl.NoCurl, 1.0)
+    ScrollUpGesture.addCurl(finger, FingerCurl.NoCurl, 1.0)
 }
+
+const knowGestures = [ ScrollDownGesture, ScrollUpGesture ]
+
+const gestureStrings = {
+    'scroll-up': '🖐',
+    'scroll-down': '✊️'
+}
+
+export { knowGestures, gestureStrings }
