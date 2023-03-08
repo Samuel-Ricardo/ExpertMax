@@ -21,7 +21,22 @@ export default class HandGestureService {
   }
 
 
+  //async iterator - while i read, i return a response 
+  async * detectGesture(predictions){
+    for (const hand of predictions){
+      if(!hand.keypoints3D) continue;
 
+      const gesture = await this.estimate(hand.keypoints3D)
+      if(!gesture.length) continue;
+
+
+      const result = gesture.reduce( (previous, current) => (previous.score > current.score)? previous : current)
+
+      const {x,y} = hand.keypoints.find(keypoint => keypoint.name === 'index_finger_tip')
+      yield { event: result.name, x, y } //return result and later continue the 'for'
+
+    }
+  }
 
   #getLandMarksFromKeypoints(keypoints3D) {
     return keypoints3D.map(keypoint => [keypoint.x, keypoint.y, keypoint.z])
