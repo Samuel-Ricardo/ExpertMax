@@ -12,6 +12,15 @@ export default class HandGestureService {
     this.#handsVersion = handsVersion
   }
 
+  async estimate(keypoints3D) {
+    const predictions = this.#gestureEstimator.estimate(
+      this.#getLandMarksFromKeypoints(keypoints3D),
+      8 // 80% - percentage of confidence of gesture
+    )
+    return predictions.gestures;
+  }
+
+
 
 
   #getLandMarksFromKeypoints(keypoints3D) {
