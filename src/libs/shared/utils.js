@@ -8,7 +8,7 @@ function supportWorkerType() {
     finally{ return supports }
 }
 
-function prepareRunChecker({ tmierDelay: timerDelay }) {
+function prepareRunChecker({ timerDelay }) {
     let lastEvent = Date.now()
     return {
         shouldRun() {
