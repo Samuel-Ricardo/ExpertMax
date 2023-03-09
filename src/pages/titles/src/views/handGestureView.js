@@ -34,7 +34,16 @@ export default class HandGestureView {
         const element = document.elementFromPoint(x, y)
         if(!element) return
 
-        console.log({element, x, y})
+        const rect = element.getBoundingClientRect()
+        const event = new MouseEvent('click', {
+            view: window,
+            bubbles: true,
+            cancelable: true,
+            clientX: rect.left + x,
+            clientY: rect.top + y
+        })
+
+        element.dispatchEvent(event)
     }
 
     #drawnJoients(keypoints) {
