@@ -26,6 +26,20 @@ export default class HandGestureView {
         }
     }
 
+    #drawnJoients(keypoints) {
+        for (const {x, y} of keypoints){
+            this.#canvasContext.beginPath()
+
+            const newX = x - 2;
+            const newY = y - 2;
+            const radius = 3;
+            const startAngle = 0;
+            const endAngle = 2*Math.PI;
+
+            this.#canvasContext.arc(newX, newY, radius, startAngle, endAngle)
+            this.#canvasContext.fill()
+        }
+    }
 
     loop(fun) { requestAnimationFrame(fun) } //60fps
 
