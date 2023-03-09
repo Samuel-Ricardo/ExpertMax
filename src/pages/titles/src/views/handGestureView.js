@@ -8,6 +8,10 @@ export default class HandGestureView {
         this.#handsCanvas.height = globalThis.screen.availHeitgt
     }
 
+    clear() {
+        this.#canvasContext.clearReact(0, 0, this.#handsCanvas.width, this.#handsCanvas.height)
+    }
+
     loop(fun) { requestAnimationFrame(fun) } //60fps
 
     scrollPage(top){
