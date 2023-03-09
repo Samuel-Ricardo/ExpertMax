@@ -1,13 +1,17 @@
-import { knowGestures, gestureStrings } from "../utils/gestures.js"
+import { knowGestures, gestureStrings } from "../utils"
 
 export default class HandGestureService {
+  #gestureStrings
+  #knowGestures
   #gestureEstimator
   #handPoseDetection
   #handsVersion
   #detector = null
 
   constructor({ fingerpose, handPoseDetection, handsVersion }){
-    this.#gestureEstimator = new fingerpose.GestureEstimator(knowGestures)
+    this.#knowGestures = knowGestures
+    this.#gestureStrings = gestureStrings
+    this.#gestureEstimator = new fingerpose.GestureEstimator(this.#knowGestures)
     this.#handPoseDetection = handPoseDetection 
     this.#handsVersion = handsVersion
   }
@@ -34,7 +38,7 @@ export default class HandGestureService {
 
       const {x,y} = hand.keypoints.find(keypoint => keypoint.name === 'index_finger_tip')
       yield { event: result.name, x, y } //return result and later continue the 'for'
-      console.log(gestureStrings[result.name])
+      console.log(this.#gestureStrings[result.name])
     }
   }
 
