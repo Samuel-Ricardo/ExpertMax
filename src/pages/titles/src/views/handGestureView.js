@@ -8,8 +8,19 @@ export default class HandGestureView {
         this.#handsCanvas.height = globalThis.screen.availHeitgt
     }
 
-    clear() {
+    clearCanvas() {
         this.#canvasContext.clearReact(0, 0, this.#handsCanvas.width, this.#handsCanvas.height)
+    }
+
+    drawResult(hands) {
+        for (const {keypoints, handedness} of hands) {
+            if(!keypoints) continue
+
+            this.#canvasContext.fillStyle = handedness === 'left'? 'red' : 'green'
+            this.#canvasContext.strokeStyle = "white"
+            this.#canvasContext.lineWidth = 8
+            this.#canvasContext.lineJoin = 'round'
+        }
     }
 
     loop(fun) { requestAnimationFrame(fun) } //60fps
