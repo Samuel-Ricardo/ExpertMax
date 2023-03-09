@@ -21,7 +21,7 @@ export default class HandGestureView {
             this.#canvasContext.lineWidth = 8
             this.#canvasContext.lineJoin = "round"
 
-            //juntas
+            //juntas dos dedos
             this.#drawnJoients(keypoints)
         }
     }

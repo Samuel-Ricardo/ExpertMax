@@ -40,6 +40,10 @@ export default class HandGestureController {
   async #estimateHands() {
     try{ 
       const hands = await this.#service.estimateHands(this.#camera.video);
+      
+      this.#view.clearCanvas ()
+      if(hands?.length) this.#view.drawnResult(hands)
+
       for await (const { event, x, y } of this.#service.detectGesture(hands)){
         if(!scrollShouldRun()) continue;
 
