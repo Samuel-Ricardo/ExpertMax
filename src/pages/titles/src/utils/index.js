@@ -10,4 +10,4 @@ const fingerLookupIndexes = {
     pinky: [ 0, 17, 18, 19, 20]
 }
 
-export { fingerLookupIndexes as fingerLookupIndeces,  gestureStrings, knowGestures}
+export { fingerLookupIndexes,  gestureStrings, knowGestures}
