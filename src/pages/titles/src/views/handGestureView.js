@@ -30,6 +30,13 @@ export default class HandGestureView {
         }
     }
 
+    clickOnElement(x, y){
+        const element = document.elementFromPoint(x, y)
+        if(!element) return
+
+        console.log({element, x, y})
+    }
+
     #drawnJoients(keypoints) {
         for (const {x, y} of keypoints){
             this.#canvasContext.beginPath()
