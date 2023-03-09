@@ -49,7 +49,12 @@ export default class HandGestureController {
 
         console.log({event});
 
-        if(event.includes('scroll')) {this.#scrollPage(event)}
+        if(event === 'click') {
+          this.#view.clickOnElement(x,y)
+          continue;
+        }
+
+        if(event.includes('scroll')) this.#scrollPage(event)
       }
     }
 
