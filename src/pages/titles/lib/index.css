@@ -42,6 +42,11 @@ a {
     flex-direction: column;
 }
 
+#hands {
+    pointer-events: none;
+    position: fixed;
+    z-index: 12;
+}
 
 .red {
     color: var(--red);
@@ -628,19 +633,21 @@ a {
     background-color: #616161;
 }
 
+/*
 .card:hover .overlay, .card.active .overlay{
     display: flex;
     background-image: linear-gradient(to right,
             rgba(51, 51, 51, 0.95),
             rgba(255, 255, 255, 0.01));
 }
+*/
 
-/* .card .overlay {
+.card .overlay {
     display: flex;
     background-image: linear-gradient(to right,
             rgba(51, 51, 51, 0.95),
             rgba(255, 255, 255, 0.01));
-} */
+} 
 
 .overlay p {
     color: #bdbdbd;
