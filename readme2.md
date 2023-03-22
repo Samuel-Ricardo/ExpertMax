@@ -60,3 +60,26 @@
 - Current Version: <b> 1.0.0 </b>
 
 #
+
+<h2 id="techs">
+  :building_construction: | Technologies and Concepts Studied:
+</h2>
+
+  > <a href='https://www.tensorflow.org/?hl=pt-br'> <img width='40px' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg'> </a>
+
+  - JavaScript
+  - HTML
+  - CSS
+  - Tensorflow
+  - Webworkers
+  - Browser-Sync 
+  - MVC
+  - Desing Patterns
+  - Camera Handling
+  - Canvas
+  - Perfomance
+
+  > Among Others...
+
+  #
+
