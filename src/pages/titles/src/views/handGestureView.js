@@ -102,9 +102,9 @@ export default class HandGestureView {
     loop(fun) { requestAnimationFrame(fun) } //60fps
 
     scrollPage(top){
-        scroll({
+        scrollTo({
             top,
-            behavior: 'smooth'
+            //behavior: 'smooth'
         })
     }
  }
