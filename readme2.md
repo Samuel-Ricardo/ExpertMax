@@ -55,7 +55,9 @@
 - Site: <a target="_blank"  style="color: #8a4af3;" href="https://samuel-ricardo.github.io/ExpertMax/">ExpertMax - Home Page</a> 
 
 > <a href="https://samuel-ricardo.github.io/ExpertMax/"> <img src="./readme_files/image-2.png"> </a>
+  
   <br>
+  
 - This Site is hosted on <a style="color: #8a4af3;" href='https://pages.github.com/'> Github Pages </a> 
 - Current Version: <b> 1.0.0 </b>
 
@@ -83,3 +85,111 @@
 
   #
 
+<h2 id="app">
+  💻 | Application:
+</h2>
+
+<p align="justify">
+  ...
+</p>
+
+
+> <a href="https://samuel-ricardo.github.io/ExpertMax/"> <img src="./readme_files/image"> </a>
+
+
+### Firefox Demo
+
+<p align="center">
+  <video width="90%" controls>
+    <source src="./readme_files/demo_firefox.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
+
+<p align="justify">
+  ...
+</p>
+
+### Google Demo
+
+<p align="center">
+  <video width="90%" controls>
+    <source src="./readme_files/google_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<p>
+
+<p align="justify">
+  ...
+</p>
+
+### ✌ | Gestures 
+  
+| - Up: [✋]
+
+<p align="center">
+  <video width="90%" controls>
+    <source src="./readme_files/up-demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<p>
+
+<p align="justify">
+  ...
+</p>
+
+
+| - Down: [✊]
+
+
+<p align="center">
+  <video width="90%" controls>
+    <source src="./readme_files/down-demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<p>
+
+
+<p align="justify">
+  ...
+</p>
+  
+
+| - Click - [🤏]
+
+
+<p align="center">
+  <video width="90%" controls>
+    <source src="./readme_files/click_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<p>
+
+
+<p align="justify">
+  ...
+</p>
+
+
+| Pause / Resume video - [😉]
+
+
+<p align="center">
+  <video width="90%" controls>
+    <source src="./readme_files/blink_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<p>
+
+
+<p align="justify">
+  ...
+</p>
+
+
+#
+
+- This Site is hosted on <a style="color: #8a4af3;" href='https://pages.github.com/'> Github Pages </a> 
+- Current Version: <b> 1.0.0 </b>
+
+#
