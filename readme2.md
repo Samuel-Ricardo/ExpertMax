@@ -89,6 +89,8 @@
   💻 | Application:
 </h2>
 
+* Click on GIFs to open the full HD (1080p) video and see details
+
 <p align="justify">
   ...
 </p>
@@ -104,6 +106,11 @@
     <source src="./readme_files/demo_firefox.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <a target="_blank" href="./readme_files/demo_firefox.mp4">
+    <img style="min-width: 80%" src="./readme_files/demo_firefox.gif"/>
+  </a>
+
 </p>
 
 <p align="justify">
@@ -117,6 +124,10 @@
     <source src="./readme_files/google_demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <a target="_blank" href="./readme_files/google_demo.mp4">
+    <img style="min-width: 80%" src="./readme_files/google_demo.gif"/>
+  </a>
 <p>
 
 <p align="justify">
@@ -133,7 +144,10 @@
     Your browser does not support the video tag.
   </video>
 
-  <img style="min-width: 80%" src="./readme_files/up-demo.gif"/>
+  <a target="_blank" href="./readme_files/up-demo.mp4">
+    <img style="min-width: 80%" src="./readme_files/up-demo.gif"/>
+  </a>
+
 <p>
 
 <p align="justify">
@@ -149,6 +163,10 @@
     <source src="./readme_files/down-demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <a target="_blank" href="./readme_files/down-demo.mp4">
+    <img style="min-width: 80%" src="./readme_files/down-demo.gif"/>
+  </a>
 
 
 <p>
@@ -167,6 +185,12 @@
     <source src="./readme_files/click_demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+<a target="_blank" href="./readme_files/click_demo.mp4">
+    <img style="min-width: 80%" src="./readme_files/click_demo.gif"/>
+  </a>
+
+
 <p>
 
 
@@ -184,6 +208,11 @@
     Your browser does not support the video tag.
   </video>
 <p>
+
+<a target="_blank" href="./readme_files/blink_demo.mp4">
+    <img style="min-width: 80%" src="./readme_files/blink_demo.gif"/>
+</a>
+
 
 
 <p align="justify">
