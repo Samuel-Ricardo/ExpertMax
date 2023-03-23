@@ -210,7 +210,7 @@
 <p>
 
 <a target="_blank" href="./readme_files/blink_demo.mp4">
-    <img style="min-width: 80%" src="./readme_files/blink_demo.gif"/>
+    <img width="90%" src="./readme_files/blink_demo.gif"/>
 </a>
 
 
