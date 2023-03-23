@@ -132,6 +132,8 @@
     <source src="./readme_files/up-demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <img src="./readme_files/up-demo.gif"/>
 <p>
 
 <p align="justify">
@@ -147,6 +149,8 @@
     <source src="./readme_files/down-demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+
 <p>
 
 
