@@ -228,8 +228,8 @@ You need to have `NodeJS` on your machine and a package manager (`npm`, `yarn`, 
   $ npm install
 
   # To run the project
-  $ yarn run dev
-  $ npm run dev
+  $ yarn run start
+  $ npm run start
 
 ```
 
