@@ -108,7 +108,7 @@
   </video>
 
   <a target="_blank" href="./readme_files/demo_firefox.mp4">
-    <img style="min-width: 80%" src="./readme_files/demo_firefox.gif"/>
+    <img width="80%" src="./readme_files/demo_firefox.gif"/>
   </a>
 
 </p>
@@ -126,7 +126,7 @@
   </video>
 
   <a target="_blank" href="./readme_files/google_demo.mp4">
-    <img style="min-width: 80%" src="./readme_files/google_demo.gif"/>
+    <img width="80%" src="./readme_files/google_demo.gif"/>
   </a>
 <p>
 
@@ -145,7 +145,7 @@
   </video>
 
   <a target="_blank" href="./readme_files/up-demo.mp4">
-    <img style="min-width: 80%" src="./readme_files/up-demo.gif"/>
+    <img src="./readme_files/up-demo.gif"/>
   </a>
 
 <p>
@@ -165,7 +165,7 @@
   </video>
 
   <a target="_blank" href="./readme_files/down-demo.mp4">
-    <img style="min-width: 80%" src="./readme_files/down-demo.gif"/>
+    <img src="./readme_files/down-demo.gif"/>
   </a>
 
 
@@ -187,10 +187,8 @@
   </video>
 
 <a target="_blank" href="./readme_files/click_demo.mp4">
-    <img style="min-width: 80%" src="./readme_files/click_demo.gif"/>
+    <img src="./readme_files/click_demo.gif"/>
   </a>
-
-
 <p>
 
 
@@ -207,11 +205,12 @@
     <source src="./readme_files/blink_demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-<p>
 
-<a target="_blank" href="./readme_files/blink_demo.mp4">
-    <img width="90%" src="./readme_files/blink_demo.gif"/>
-</a>
+  <a target="_blank" href="./readme_files/blink_demo.mp4">
+    <img width="60%" src="./readme_files/blink_demo.gif"/>
+  </a>
+
+<p>
 
 
 
