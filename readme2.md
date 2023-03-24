@@ -104,9 +104,12 @@
   This application map 4 gestures with possibilities to expando for more, you can control the screen scroll and click in any place of screen without touch on mouse or screen or any place, just with gestures, you to can control the video player, pausing and resuming with just a blink.
 </p>
 
+<br>
+
 
 > <a href="https://samuel-ricardo.github.io/ExpertMax/"> <img src="./readme_files/image"> </a>
 
+<br>
 
 ### Firefox Demo
 
@@ -147,8 +150,13 @@
 <br>
 
 ### ✌ | Gestures 
+
+<br>
   
 | - Scroll Up: [✋]
+
+
+<br>
 
 <p align="center">
   <video width="90%" controls>
@@ -170,6 +178,8 @@
 | - Scroll Down: [✊]
 
 
+<br>
+
 <p align="center">
   <video width="90%" controls>
     <source src="./readme_files/down-demo.mp4" type="video/mp4">
@@ -185,9 +195,11 @@
   to scroll down you just need to close your hands
 </p>
   
+<br>
 
 | - Mouse Click - [🤏]
 
+<br>
 
 <p align="center">
   <video width="90%" controls>
@@ -200,14 +212,15 @@
   </a>
 <p>
 
-
 <p align="justify">
   To hover you just need to hover your hands through the elements, to click, you just need to make the pinch gesture, i put a dlay of 1 second else it was clicking to many times by second
 </p>
 
+<br>
 
 | Pause / Resume video - [😉]
 
+<br>
 
 <p align="center">
   <video width="90%" controls>
