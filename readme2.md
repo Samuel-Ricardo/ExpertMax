@@ -49,8 +49,21 @@
 <h2>  | :artificial_satellite: About:  </h2>
 
 <p align="justify">
-  ...
+  Pure vanila js, css, html streaming platform with support for gesture navigation, recive camera data and, with user permission of course (privacy in 1º place), proccesses data with a google IA that map the points of your hands and drawn on the sceen  
 </p>
+
+<p align="justify">
+  All this while indentfy the hands gesture and interprates what they means, translating to a code comand in real time 60 times by second
+</p>
+
+<p align="justify">
+  It to have a facial recognition to map eyes and identify the eyes blinks, again, in real time he identify the blink and translate to a comand in the code
+</p>
+
+<p align="justify">
+  All this made with perfomance to run in any potato that dare to show video, compatible with Google, Firefox, OperaGX and others Browsers
+</p>
+
 
 - Site: <a target="_blank"  style="color: #8a4af3;" href="https://samuel-ricardo.github.io/ExpertMax/">ExpertMax - Home Page</a> 
 
