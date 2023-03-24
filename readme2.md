@@ -61,7 +61,7 @@
 </p>
 
 <p align="justify">
-  All this made with perfomance to run in any potato that dare to show video, compatible with Google, Firefox, OperaGX and others Browsers
+  All this made with perfomance to run in any potato that dare to show video, compatible with Brave, Google, Firefox, OperaGX and others Browsers
 </p>
 
 
@@ -105,7 +105,7 @@
 * Click on GIFs to open the full HD (1080p) video and see details
 
 <p align="justify">
-  ...
+  This application map 4 gestures with possibilities to expando for more, you can control the screen scroll and click in any place of screen without touch on mouse or screen or any place, just with gestures, you to can control the video player, pausing and resuming with just a blink.
 </p>
 
 
@@ -123,14 +123,15 @@
   <a target="_blank" href="./readme_files/demo_firefox.mp4">
     <img width="80%" src="./readme_files/demo_firefox.gif"/>
   </a>
-
 </p>
 
 <p align="justify">
-  ...
+  Application running on Firefox browser, by the way, firefox browser dont have support to blink detection, but, the application look more fluid.
 </p>
 
-### Google Demo
+<br>
+
+### Brave Demo
 
 <p align="center">
   <video width="90%" controls>
@@ -144,12 +145,14 @@
 <p>
 
 <p align="justify">
-  ...
+  Application running on Brave, google chromiun based browser.
 </p>
+
+<br>
 
 ### ✌ | Gestures 
   
-| - Up: [✋]
+| - Scroll Up: [✋]
 
 <p align="center">
   <video width="90%" controls>
@@ -160,15 +163,15 @@
   <a target="_blank" href="./readme_files/up-demo.mp4">
     <img src="./readme_files/up-demo.gif"/>
   </a>
-
 <p>
 
 <p align="justify">
-  ...
+  To Scroll Up you just need to open your hands in front of camera
 </p>
 
+<br>
 
-| - Down: [✊]
+| - Scroll Down: [✊]
 
 
 <p align="center">
@@ -180,17 +183,14 @@
   <a target="_blank" href="./readme_files/down-demo.mp4">
     <img src="./readme_files/down-demo.gif"/>
   </a>
-
-
 <p>
 
-
 <p align="justify">
-  ...
+  to scroll down you just need to close your hands
 </p>
   
 
-| - Click - [🤏]
+| - Mouse Click - [🤏]
 
 
 <p align="center">
@@ -206,7 +206,7 @@
 
 
 <p align="justify">
-  ...
+  To hover you just need to hover your hands through the elements, to click, you just need to make the pinch gesture, i put a dlay of 1 second else it was clicking to many times by second
 </p>
 
 
@@ -226,15 +226,14 @@
 <p>
 
 
-
 <p align="justify">
-  ...
+  To pause and resume video, you need to active the facial recognition on button above the video and wait a second to start, when it ready will display a blink counter and you can blink to pause and resume video, stay close to camera for better experience
 </p>
 
 
 #
 
-- This Site is hosted on <a style="color: #8a4af3;" href='https://pages.github.com/'> Github Pages </a> 
+- This Site is hosted on <a style="color: #8a4af3;" href='https://samuel-ricardo.github.io/ExpertMax/'> Github Pages </a> 
 - Current Version: <b> 1.0.0 </b>
 
 #
