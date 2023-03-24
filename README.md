@@ -1,66 +1,312 @@
-# JSExpertMax Gesture Controller - Semana JS Expert 7.0
+# ExpertMax
 
-Seja bem vindo(a) à sétima Semana Javascript Expert. Este é o código inicial para iniciar nossa jornada.
+<p align="center"> 
+  <a href="https://cursos.erickwendel.com.br/">
+    <img width="auto" src="./readme_files/image"/>
+  </a> 
+</p>
 
-Marque esse projeto com uma estrela 🌟
+<h4 align="center" >🚀 🟩 Semana JS Expert - 2023 🟩 🚀</h4>
 
-## Preview
-<img width=100% src="./initial-template/assets/demo-template-lg.gif">
 
-## Pre-reqs
-- Este projeto foi criado usando Node.js v19.6
-- O ideal é que você use o projeto em ambiente Unix (Linux). Se você estiver no Windows, é recomendado que use o [Windows Subsystem Linux](https://www.omgubuntu.co.uk/how-to-install-wsl2-on-windows-10) pois nas aulas são mostrados comandos Linux que possam não existir no Windows.
 
-## Importante
-- Todo dia às 18hrs estou subindo o código das aulas do dia corrente em [classes](./classes). Se você for iniciar o projeto, remova a pasta [classes](./classes) para iniciar do zero!
+<h4 align="center">
+  Application developed during a JavaScript Event, the <a style="color: #8a4af3;" href="https://github.com/search?q=js+expert" target="_blank">JS Expert #07</a> promoted by <a style="color: #8a4af3;" href="https://cursos.erickwendel.com.br/" target="_blank">@ErickWendel</a>
+</h4>
 
-## Running
-- Execute `npm ci` na pasta que contém o arquivo `package.json` para restaurar os pacotes
-- Execute `npm start` e em seguida vá para o seu navegador em [http://localhost:3000](http://localhost:3000) para visualizar a página acima
+#
+<p align="center">
+  |&nbsp;&nbsp;
+  <a style="color: #8a4af3;" href="#project">Overview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a style="color: #8a4af3;" href="#techs">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a style="color: #8a4af3;" href="#app">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a style="color: #8a4af3;" href="#run-project">Run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a style="color: #8a4af3;" href="#author">Author</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-## Checklist Features
-- Titles List
-  - [] - Campo para pesquisa não deve travar ao digitar termo de pesquisa
-  - [] - Deve desenhar mãos na tela e fazer com que elementos em segundo plano  continuem sendo clicáveis  🙌
-  - [] - Deve disparar scroll up quando usar a palma das mãos abertas 🖐
-  - [] - Deve disparar scroll down quando usar a palma das mãos fechadas ✊
-  - [] - Deve disparar click no elemento mais próximo quando usar  gesto de pinça 🤏🏻
-  - [] - Ao mover elementos na tela, deve disparar evento **:hover** em elementos em contexto
+#
 
-- Video Player
-  - [] - Deve ser possivel de reproduzir ou pausar videos com o piscar de olhos 😁
-  - [] - Todo processamento de Machine Learning deve ser feito via Web worker
-
-### Desafios
-- [] - Aula 01 - Diferenciar piscada de olhos entre olho direito e esquerdo e atualizar log para mostrar qual olho que piscou.
-- [] - Aula 02 - Reconhecer gestos de mãos individuais e printar no log
-- [] - Aula 03 - A definir
-- [] - Aula 04 - A definir
-
-### Links mostrados nos aulas:
-- Reuni todos os links em [referências](./referencias.md)
-### Considerações
-- Tire suas dúvidas sobre os desafios em nossa comunidade, o objetivo é você aprender de forma divertida. Surgiu dúvidas? Pergunte por lá!
-
-- Ao completar qualquer um dos desafios, envie no canal **#desafios** da comunidade no **Discord**
-### FAQ
-- browser-sync está lançando erros no Windows e nunca inicializa:
-  - Solução: Trocar o browser-sync pelo http-server.
-    1. instale o **http-server**  com `npm i -D http-server`
-    2. no package.json apague todo o comando do `browser-sync` e substitua por `npx http-server .`
-    3. agora o projeto vai estar executando na :8080 então vá no navegador e tente acessar o http://localhost:8080/
-  A unica coisa, é que o projeto não vai reiniciar quando voce alterar algum código, vai precisar dar um F5 na página toda vez que alterar algo
-- Erro no navegador de Webgl is not supported on this device
-    - Digite chrome://gpu/ no Chrome para verificar se o webgl está habilitado.
-    - Possíveis soluções:
-      1. Opção 1: Habilitar a aceleração de hardware quando dispponível
-       -  Chrome => Settings > System > Use hardware acceleration when available
-       -  Firefox => Browser options > Performance > Use hardware acceleration when available
-      2. Opção 2: Atualizar driver da placa de vídeo
-      - Veja detalhes no [webgl-is-not-supported-on-chrome-firefox](https://www.thewindowsclub.com/webgl-is-not-supported-on-chrome-firefox)
-      3. Opção 3: Trocar de WebGL para CPU (mais lento) ou Web Assembly
-        - https://blog.tensorflow.org/2020/03/introducing-webassembly-backend-for-tensorflow-js.html
-     - (agradecimentos ao usuario Volpin em nossa comunidade do Discord)
+<h1 align="center">
   
-### Créditos ao Layout
-- Interface baseada no projeto [Streaming Service](https://codepen.io/Gunnarhawk/pen/vYJEwoM) de [gunnarhawk](https://github.com/Gunnarhawk)
+  <a href="https://github.com/Samuel-Ricardo">
+    <img src="https://img.shields.io/static/v1?label=&message=Samuel%20Ricardo&color=black&style=for-the-badge&logo=GITHUB"/>
+  </a>
+
+  <a herf="https://www.instagram.com/samuel_ricardo.ex/">
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel.ex&color=black&style=for-the-badge&logo=instagram'/> 
+  </a>
+
+  <a herf='https://www.linkedin.com/in/samuel-ricardo/'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel%20Ricardo&color=black&style=for-the-badge&logo=LinkedIn'/> 
+  </a>
+
+</h1>
+
+<br>
+
+<p id="project"/>
+
+<h2>  | :artificial_satellite: About:  </h2>
+
+<p align="justify">
+  Streaming platform with pure JS CSS HTML, with support for gesture navigation, receives data from the camera and, with user permission of course (privacy in 1st place), processes data with a Google AI that maps the points of your hands and recreates from them a 2d representation of your hand on the screen in real time  
+</p>
+
+<p align="justify">
+  Also while identifying hand gestures and interpreting what they mean, translating to a code comman. It has a facial recognition to map the eyes and identify eye blinks, it automatically identifies the blink and translates it into a command in code
+</p>
+
+<p align="justify">
+  All this happening in real time 60 times per second (60 fps), made with performance to run on any potato that dares to show video, compatible with Google, Firefox, Opera GX and other browsers
+</p>
+
+
+- Site: <a target="_blank"  style="color: #8a4af3;" href="https://samuel-ricardo.github.io/ExpertMax/">ExpertMax - Home Page</a> 
+
+> <a href="https://samuel-ricardo.github.io/ExpertMax/"> <img src="./readme_files/image-2.png"> </a>
+  
+  <br>
+  
+- This Site is hosted on <a style="color: #8a4af3;" href='https://pages.github.com/'> Github Pages </a> 
+- Current Version: <b> 1.0.0 </b>
+
+#
+
+<h2 id="techs">
+  :building_construction: | Technologies and Concepts Studied:
+</h2>
+
+  > <a href='https://www.tensorflow.org/?hl=pt-br'> <img width='40px' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg'> </a>
+
+  - JavaScript
+  - HTML
+  - CSS
+  - Tensorflow
+  - Webworkers
+  - Browser-Sync 
+  - MVC
+  - Desing Patterns
+  - Camera Handling
+  - Canvas
+  - Perfomance
+
+  > Among Others...
+
+  #
+
+<h2 id="app">
+  💻 | Application:
+</h2>
+
+* Click on GIFs to open the full HD (1080p) video and see details
+
+<p align="justify">
+  This application map 4 gestures with possibilities to expando for more, you can control the screen scroll and click in any place of screen without touch on mouse or screen or any place, just with gestures, you to can control the video player, pausing and resuming with just a blink.
+</p>
+
+<br>
+
+
+> <a href="https://samuel-ricardo.github.io/ExpertMax/"> <img src="./readme_files/image"> </a>
+
+<br>
+
+### Firefox Demo
+
+<p align="center">
+  <video width="90%" controls>
+    <source src="./readme_files/demo_firefox.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <a target="_blank" href="./readme_files/demo_firefox.mp4">
+    <img width="80%" src="./readme_files/demo_firefox.gif"/>
+  </a>
+</p>
+
+<p align="justify">
+  Application running on Firefox browser, by the way, firefox browser dont have support to blink detection, but, the application look more fluid.
+</p>
+
+<br>
+
+### Brave Demo
+
+<p align="center">
+  <video width="90%" controls>
+    <source src="./readme_files/google_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <a target="_blank" href="./readme_files/google_demo.mp4">
+    <img width="80%" src="./readme_files/google_demo.gif"/>
+  </a>
+<p>
+
+<p align="justify">
+  Application running on Brave, google chromiun based browser.
+</p>
+
+<br>
+
+### ✌ | Gestures 
+
+<br>
+  
+| - Scroll Up: [✋]
+
+
+<br>
+
+<p align="center">
+  <video width="90%" controls>
+    <source src="./readme_files/up-demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <a target="_blank" href="./readme_files/up-demo.mp4">
+    <img src="./readme_files/up-demo.gif"/>
+  </a>
+<p>
+
+<p align="justify">
+  To Scroll Up you just need to open your hands in front of camera
+</p>
+
+<br>
+
+| - Scroll Down: [✊]
+
+
+<br>
+
+<p align="center">
+  <video width="90%" controls>
+    <source src="./readme_files/down-demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <a target="_blank" href="./readme_files/down-demo.mp4">
+    <img src="./readme_files/down-demo.gif"/>
+  </a>
+<p>
+
+<p align="justify">
+  to scroll down you just need to close your hands
+</p>
+  
+<br>
+
+| - Mouse Click - [🤏]
+
+<br>
+
+<p align="center">
+  <video width="90%" controls>
+    <source src="./readme_files/click_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+<a target="_blank" href="./readme_files/click_demo.mp4">
+    <img src="./readme_files/click_demo.gif"/>
+  </a>
+<p>
+
+<p align="justify">
+  To hover you just need to hover your hands through the elements, to click, you just need to make the pinch gesture, i put a dlay of 1 second else it was clicking to many times by second
+</p>
+
+<br>
+
+| Pause / Resume video - [😉]
+
+<br>
+
+<p align="center">
+  <video width="90%" controls>
+    <source src="./readme_files/blink_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <a target="_blank" href="./readme_files/blink_demo.mp4">
+    <img width="60%" src="./readme_files/blink_demo.gif"/>
+  </a>
+
+<p>
+
+
+<p align="justify">
+  To pause and resume video, you need to active the facial recognition on button above the video and wait a second to start, when it ready will display a blink counter and you can blink to pause and resume video, stay close to camera for better experience
+</p>
+
+
+#
+
+- This Site is hosted on <a style="color: #8a4af3;" href='https://samuel-ricardo.github.io/ExpertMax/'> Github Pages </a> 
+- Current Version: <b> 1.0.0 </b>
+
+#
+
+
+<h2 id="run-project"> 
+   👨‍💻 | How to use
+</h2>
+
+### Open your Git Terminal and clone this repository
+
+```git
+  $ git clone "git@github.com:Samuel-Ricardo/ExpertMax.git"
+```
+
+### Make Pull
+
+```git
+  $ git pull "git@github.com:Samuel-Ricardo/ExpertMax.git"
+```
+
+
+You need to have `NodeJS` on your machine and a package manager (`npm`, `yarn`, or other...) to interpret the code and install the dependecies.
+
+> <a target="_blank" href="https://nodejs.org/en/"> <img width="48px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /> </a>
+
+
+```bash
+  
+  # To install all the dependencies 
+  $ yarn  
+  $ npm install
+  $ npm ci
+
+
+  # To run the project
+  $ yarn run start
+  $ npm run start
+
+```
+
+#
+
+<h2 id="author">
+  :octocat: | Author:  
+</h2>
+
+> <a target="_blank" href="https://www.linkedin.com/in/samuel-ricardo/"> <img width="350px" src="https://github.com/Samuel-Ricardo/bolao-da-copa/blob/main/readme_files/IMG_20220904_220148_188.jpg?raw=true"/> <br> <p> <b> - Samuel Ricardo</b> </p></a>
+
+<h1>
+  <a herf='https://github.com/Samuel-Ricardo'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel%20Ricardo&color=black&style=for-the-badge&logo=GITHUB'> 
+  </a>
+  
+  <a herf='https://www.instagram.com/samuel_ricardo.ex/'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel.ex&color=black&style=for-the-badge&logo=instagram'> 
+  </a>
+  
+  <a herf='https://twitter.com/SamuelR84144340'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel%20Ricardo&color=black&style=for-the-badge&logo=twitter'> 
+  </a>
+  
+   <a herf='https://www.linkedin.com/in/samuel-ricardo/'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel%20Ricardo&color=black&style=for-the-badge&logo=LinkedIn'> 
+  </a>
+</h1>
+
