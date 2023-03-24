@@ -49,19 +49,15 @@
 <h2>  | :artificial_satellite: About:  </h2>
 
 <p align="justify">
-  Pure vanila js, css, html streaming platform with support for gesture navigation, recive camera data and, with user permission of course (privacy in 1º place), proccesses data with a google IA that map the points of your hands and drawn on the sceen  
+  Streaming platform with pure JS CSS HTML, with support for gesture navigation, receives data from the camera and, with user permission of course (privacy in 1st place), processes data with a Google AI that maps the points of your hands and recreates from them a 2d representation of your hand on the screen in real time  
 </p>
 
 <p align="justify">
-  All this while indentfy the hands gesture and interprates what they means, translating to a code comand in real time 60 times by second
+  Also while identifying hand gestures and interpreting what they mean, translating to a code comman. It has a facial recognition to map the eyes and identify eye blinks, it automatically identifies the blink and translates it into a command in code
 </p>
 
 <p align="justify">
-  It to have a facial recognition to map eyes and identify the eyes blinks, again, in real time he identify the blink and translate to a comand in the code
-</p>
-
-<p align="justify">
-  All this made with perfomance to run in any potato that dare to show video, compatible with Google, Firefox, OperaGX and others Browsers
+  All this happening in real time 60 times per second (60 fps), made with performance to run on any potato that dares to show video, compatible with Google, Firefox, Opera GX and other browsers
 </p>
 
 
